@@ -26,6 +26,7 @@ jobs:
         C:\hostedtoolcache\windows\Python\3.6.8\x64\python.exe -m pip install --upgrade pip
         py -3 -m venv env
         env\scripts\activate
+        pip install install-requires
         pip install -r requirements.txt
     - name: Zip the application files
       run: zip -r myapp.zip .
