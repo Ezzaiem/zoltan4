@@ -26,7 +26,6 @@ jobs:
         python -m pip install --user --upgrade pip
         py -3 -m venv env
         env\scripts\activate
-        pip install --upgrade pip
         pip install -r requirements.txt
     - name: Zip the application files
       run: zip -r myapp.zip .
