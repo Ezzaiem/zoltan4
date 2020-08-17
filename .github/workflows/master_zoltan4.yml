@@ -23,7 +23,7 @@ jobs:
     - name: Install Python dependencies
       run: |  
 
-        pip install --upgrade pip
+        python -m pip install --user --upgrade pip
         py -3 -m venv env
         env\scripts\activate
         pip install --upgrade pip
