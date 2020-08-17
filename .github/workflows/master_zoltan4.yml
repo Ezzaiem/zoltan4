@@ -22,10 +22,11 @@ jobs:
        
     - name: Install Python dependencies
       run: |  
-        d:\a\zoltan4\zoltan4\env\scripts\python.exe -m pip install --upgrade pip    
+
         pip install --upgrade pip
         py -3 -m venv env
         env\scripts\activate
+        pip install --upgrade pip
         pip install -r requirements.txt
     - name: Zip the application files
       run: zip -r myapp.zip .
