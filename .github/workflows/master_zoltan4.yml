@@ -27,7 +27,7 @@ jobs:
         py -3 -m venv env
         env\scripts\activate
         pip install install-requires
-        pip freeze
+        pip freeze > requirements.txt
         pip3 install -r requirements.txt
     - name: Zip the application files
       run: zip -r myapp.zip .
