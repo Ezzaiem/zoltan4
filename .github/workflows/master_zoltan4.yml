@@ -30,7 +30,7 @@ jobs:
         pip freeze > requirements.txt
         pip3 install -r requirements.txt
     - name: Zip the application files
-        zip -r myapp.zip 
+        zip -r myapp.zip -d
   
     - name: 'Deploy to Azure Web App'
       uses: azure/webapps-deploy@v1
